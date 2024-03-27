@@ -29,11 +29,15 @@
     <div class="purple-button"><strong>Try it free 7 days</strong> then $20/mo. thereafter</div>
     <div class="form-container">
       <form id="form" action="#" class="form">
-        <input type="text" value="First Name"></input>
-        <input type="text" value="Last Name"></input>
-        <input type="email" value="Email Address"></input>
-        <input type="password" value="Password"></input>
-        <button>CLAIM YOUR FREE TRIAL</button>
+        <div class="input-wrapper"><input id="firstname" type="text" value="FirstName"><svg id="erroricon1" class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg></input></div>
+        <p id="nameerror">First Name cannot be empty</p>
+        <div class="input-wrapper"><input id="lastname" type="text" value="LastName"><svg id="erroricon2" class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg></input></div>
+        <p id="lastnameerror">Last Name cannot be empty</p>
+        <div class="input-wrapper"><input id="email" type="email" value="Email"><svg id="erroricon3" class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg></input></div>
+        <p id="emailerror">Looks like this is not an email</p>
+        <div class="input-wrapper"><input id="password" type="password" value="Password"></input><svg id="erroricon4" class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg></input></div>
+        <p id="passerror">Password cannot be empty</p>
+        <button id="button">CLAIM YOUR FREE TRIAL</button>
       </form>
       <p class="disclaimer">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
     </div>
@@ -47,5 +51,6 @@
     Coded by <a href="#">Your Name Here</a>.
   </p>
 </footer> -->
+<script src="/main.js"></script>
 </body>
 </html>

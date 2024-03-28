@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 0.5rem; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
@@ -161,13 +161,20 @@ span{
     background-color: hsl(154, 66%, 69%);
 }
 
+.attribution{
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+}
+
+
 
 /* ------------------------------MEDIA QUERIES-------------------------- */
 
 @media screen and (min-width:900px) {
     .main-container {
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -175,6 +182,7 @@ span{
         gap: 60px;
         background-image: url(images/bg-intro-desktop.png);
         background-color: var(--primary-Red);
+        position: relative;
     }
     
     .text-container{
@@ -264,6 +272,14 @@ span{
     span{
         color: var(--primary-Red);
         font-weight: 600;
+    }
+
+    .attribution{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
     }
     
 }
